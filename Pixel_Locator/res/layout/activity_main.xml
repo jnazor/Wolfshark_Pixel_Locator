@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- tools:context=".MainActivity"  -->
+<!-- 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+        -->
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/X_title"
+        android:text="X: "
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="24dp" />
+    
+    <EditText
+		    android:id="@+id/x_coord"
+		    android:text="120"
+		    android:layout_width="100dp"
+		    android:layout_marginRight="20dp"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    android:inputType="numberDecimal"
+		    android:layout_toRightOf="@+id/X_title" >
+
+		    <requestFocus />
+		    
+	</EditText>
+	
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Y_title"
+        android:text="Y: "
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/x_coord"
+        android:textSize="24dp" />
+		
+    <EditText
+		    android:id="@+id/y_coord"
+		    android:text="240"
+		    android:layout_width="100dp"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    android:inputType="numberDecimal"
+		    android:layout_toRightOf="@+id/Y_title" >
+		    
+	</EditText>
+	
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="OK"
+        android:id="@+id/OK"
+        android:onClick="onOk"
+        android:layout_below="@+id/X_title" />
+
+</RelativeLayout>
